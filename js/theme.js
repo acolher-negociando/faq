@@ -5,21 +5,21 @@
 	}
 })();
 
-// Auto change theme based on localStorage => system preference => default to light
+// Auto change theme based on localStorage => system preference => defaults to light
 function autoSelection() {
 	var themeColor = localStorage.getItem("themeColor");
 
 	if (themeColor !== null && (themeColor === "dark" || themeColor === "light")) {
-		setTheme(themeColor, "auto");
+		setTheme(themeColor, 'auto');
 	} else {
 		localStorage.setItem("selectionMode", "auto");
 
-		const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 		if (prefersDarkMode) {
-			setTheme("dark", "auto");
+			setTheme('dark', 'auto');
 		} else {
-			setTheme("light", "auto");
+			setTheme('light', 'auto');
 		}
 	}
 	updateToggle();
@@ -30,20 +30,18 @@ function setTheme(mode, selectionMode) {
 	localStorage.setItem("themeColor", mode);
 	localStorage.setItem("selectionMode", selectionMode);
 	document.getElementsByTagName("html")[0].setAttribute("class", mode);
-	var svgDoc = banner.contentDocument;
-	var wLamp = svgDoc.getElementById("wLamp");
 
-	if (mode === "dark") {
+	if (mode === 'dark') {
 		document.getElementById("slider").checked = true;
 		document.getElementById("icon").classList.remove("fa-sun");
 		document.getElementById("icon").classList.add("fa-moon");
-		wLamp.style.fill="white";
+		banner.style.backgroundImage="url(img/banner_dark.png)";
 		acolher.style.backgroundImage="url(img/logo_acolher_dark.png)";
 	} else {
 		document.getElementById("slider").checked = false;
 		document.getElementById("icon").classList.remove("fa-moon");
 		document.getElementById("icon").classList.add("fa-sun");
-		wLamp.style.fill="black";
+		banner.style.backgroundImage="url(img/banner_light.png)";
 		acolher.style.backgroundImage="url(img/logo_acolher_light.png)";
 	}
 }
@@ -53,9 +51,9 @@ function themeSwitch() {
 	var slider = document.getElementById("slider");
 
 	if (slider.checked) {
-		setTheme("dark", "manual");
+		setTheme('dark', 'manual');
 	} else {
-		setTheme("light", "manual");
+		setTheme('light', 'manual');
 	}
 }
 
