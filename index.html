@@ -3,24 +3,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="Compilado de dúvidas frequentes recebidas através das redes sociais do Negociando.">
-		<meta name="author" content="Projeto Acolher - Negociando">
+		<meta name="author" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/barebones.css">
 		<link rel="stylesheet" href="css/custom.css">
-<!--	<link rel="icon" href="img/favicon.ico" type="image/x-icon">	-->
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&family=Square+Peg" rel="stylesheet" type="text/css">
+<!--	<link rel="icon" type="image/x-icon" href="img/favicon.ico">	-->
 		<title>Negociando - FAQ</title>
 	</head>
 	<body>
-		<object data="img/banner.svg" type="image/svg+xml" id="banner"></object>
+		<div id="banner"></div>
 		<div id="theme">
 				<label id="switch">
-					<input type="checkbox" aria-label="Trocar tema" id="slider" onchange="themeSwitch()">
-					<i class="slider fa-solid fa-sun" id="icon"></i>
+					<input type="checkbox" id="slider" aria-label="Trocar tema" onchange="themeSwitch()">
+					<i id="icon" class="slider round fa-solid fa-sun"></i>
 				</label>
 		</div>
 		<div class="container">
-			<h1 id="title">Dúvidas Frequentes</h1>
+			<section class="header">
+				<h1 id="title">Dúvidas Frequentes</h1>
+			</section>
 			<nav id="navbar">
 				<div class="container">
 					<ul id="navbar-list">
@@ -37,10 +40,10 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="docs-section" id="option_1">
+			<div id="option_1" class="docs-section">
 				<h6 class="docs-header">Instituição</h6>
 				<details>
-					<summary><span>O que significa IES?</span></summary>
+					<summary><span>O que significa IES?<span></summary>
 					<div>
 						<p>O Grupo Ânima é uma organização educacional composta por 22 instituições de ensino superior — <b>IES</b>. São elas:</p>
 						<ul>
@@ -70,15 +73,14 @@
 					</div>
 				</details>
 			</div>
-			<div class="docs-section" id="option_2">
+			<div id="option_2" class="docs-section">
 				<h6 class="docs-header">Acadêmico</h6>
 					<details>
 						<summary>Como acesso o Portal do Aluno?</summary>
 						<div>
 							<p>O Portal da sua IES específica pode ser acessado pelo link com o formato https://estudantes<span class="highlight">[sigla da IES]</span>.ead.br. Por exemplo: https://estudantes<span class="highlight">ages</span>.ead.br.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Onde encontro o meu número de matrícula?</summary>
 						<div>
@@ -86,15 +88,14 @@
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/numero_matricula.png" width="70%" alt="Número de matrícula localizado no Painel do Estudante">
+									<img src="img/numero_matricula.png" alt="Número de matrícula localizado no Painel do Estudante" width="70%">
 								</label>
 							</div>
 							<span class="zoom-label-click">(Clique para expandir)</span>
 							<span class="zoom-label-touch">(Toque para expandir)</span>
 							<p>Outra opção é entrar em contato com a Central de Atendimento ao Estudante através do WhatsApp pelo número (11) 3298-7730. Após informar sua IES e seu CPF, será informado o seu RA (registro de aluno), sinônimo de matrícula.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Onde vejo as minhas matérias?</summary>
 						<div>
@@ -102,20 +103,19 @@
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/historico_escolar_1.png" width="70%" alt="Caminho no Ulife para visualização das UCs">
+									<img src="img/historico_escolar_1.png" alt="Caminho no Ulife para visualização das UCs" width="70%">
 								</label>
 							</div>
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/historico_escolar_2.png" width="70%" alt="Caminho no Ulife para visualização das UCs">
+									<img src="img/historico_escolar_2.png" alt="Caminho no Ulife para visualização das UCs" width="70%">
 								</label>
 							</div>
 							<span class="zoom-label-click">(Clique para expandir)</span>
 							<span class="zoom-label-touch">(Toque para expandir)</span>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Onde vejo o calendário de provas?</summary>
 						<div>
@@ -123,20 +123,19 @@
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/uc_conteudo.png" width="70%" alt="Caminho no Ulife para visualização do calendário de provas">
+									<img src="img/uc_conteudo.png" alt="Caminho no Ulife para visualização do calendário de provas" width="70%">
 								</label>
 							</div>
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/uc_calendario.png" width="70%" alt="Caminho no Ulife para visualização do calendário de provas">
+									<img src="img/uc_calendario.png" alt="Caminho no Ulife para visualização do calendário de provas" width="70%">
 								</label>
 							</div>
 							<span class="zoom-label-click">(Clique para expandir)</span>
 							<span class="zoom-label-touch">(Toque para expandir)</span>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Como funcionam as provas?</summary>
 						<div>
@@ -149,7 +148,7 @@
 						</div>
 					</details>
 			</div>
-			<div class="docs-section" id="option_3">
+			<div id="option_3" class="docs-section">
 				<h6 class="docs-header">Modalidades</h6>
 					<details>
 						<summary>Qual a diferença entre as modalidades EAD, Semi e Live?</summary>
@@ -165,8 +164,7 @@
 								<p>A IES determina o cronograma para estabelecer o dia e o horário em que as aulas serão transmitidas. O estudante só precisa acessar o ambiente virtual de aprendizagem para entrar na sala online e acompanhar o professor.</p></li>
 							</ul>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>O que são aulas síncronas e assíncronas?</summary>
 						<div>
@@ -176,7 +174,7 @@
 						</div>
 					</details>
 			</div>
-			<div class="docs-section" id="option_4">
+			<div id="option_4" class="docs-section">
 				<h6 class="docs-header">Horas Complementares</h6>
 					<details>
 						<summary>O que é Extensão Universitária?</summary>
@@ -190,16 +188,14 @@
 								<li><b>Participação em eventos</b>: participação em congressos, seminários, conferências, ciclo de debates, exposições, espetáculos, festivais e eventos esportivos <strong>promovidos por instituições de ensino superior credenciadas pelo MEC</strong>.</li>
 							</ul>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>A Extensão é obrigatória?</summary>
 						<div>
 							<p>Sim, é obrigatória por lei. O Plano Nacional de Educação (2014–2024) determina que, no mínimo, 10% da carga horária total da graduação seja cursada por meio de atividades de Extensão Universitária.</p>
 							<p>O aluno tem a liberdade de escolher uma ou mais modalidades de Extensão, desde que a soma das atividades integralize 10%.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Em que momento do curso deve-se realizar a Extensão?</summary>
 						<div>
@@ -207,8 +203,7 @@
 							<p>Para cursos tecnólogos, em função da curta duração, é recomendada a realização da Extensão nos semestres iniciais.</p>
 							<p>É importante que o aluno organize-se para a realização das atividades, de forma que não haja sobrecarga ao fim do curso.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Quais cursos de Extensão são oferecidos pela minha IES?</summary>
 						<div>
@@ -220,11 +215,10 @@
 								<li><b>Educação ambiental e caminhos para o bem-viver no mundo</b></li>
 								<li><b>Neurociência, aprendizagem e atenção plena</b></li>
 							</ul>
-							As inscrições estarão abertas entre os dias 26/03 e 02/04.</br>
+							As inscrições serão abertas em 29/04.</br>
 							</br>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Quais projetos de Extensão são oferecidos pela minha IES?</summary>
 						<div>
@@ -242,81 +236,73 @@
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/projeto_extensao_1.png" width="70%" alt="Caminho no Ulife para inscrição em projeto de Extensão">
+									<img src="img/projeto_extensao_1.png" alt="Caminho no Ulife para inscrição em projeto de Extensão" width="70%">
 								</label>
 							</div>
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/projeto_extensao_2.png" width="70%" alt="Caminho no Ulife para inscrição em projeto de Extensão">
+									<img src="img/projeto_extensao_2.png" alt="Caminho no Ulife para inscrição em projeto de Extensão" width="70%">
 								</label>
 							</div>
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/projeto_extensao_3.png" width="70%" alt="Caminho no Ulife para inscrição em projeto de Extensão">
+									<img src="img/projeto_extensao_3.png" alt="Caminho no Ulife para inscrição em projeto de Extensão" width="70%">
 								</label>
 							</div>
 							<span class="zoom-label-click">(Clique para expandir)</span>
 							<span class="zoom-label-touch">(Toque para expandir)</span>
 							<p>Nesta última página, logo acima está disponível um tutorial de como obter informações e prosseguir.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Em quantos cursos ou projetos posso me inscrever?</summary>
 						<div>
 							<p>Há o limite de inscrição em até 3 cursos e em 1 projeto a cada oferta. No momento da inscrição, deve atentar-se ao fato de que cursos e projetos exigem dedicação e disponibilidade e que, caso não consiga acompanhar as atividades previstas em cada ação, constará como reprovado ao término do semestre. Projetos, especificamente, exigem grande disponibilidade.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Fiz minha inscrição em um curso/projeto de Extensão e quero cancelar, é possível?</summary>
 						<div>
 							<p>Sim. Caso o período de inscrições ainda esteja aberto, você poderá editar livremente as suas seleções de cursos/projetos, podendo excluir ou incluir cursos/projetos e até mesmo alterar a ordem de prioridade pelo próprio sistema de seleção, clicando em “Ver inscrições”. Nesse caso, as exclusões não são contabilizadas no limite máximo de cancelamentos permitido por semestre.</p>
 							<p>Caso o período de inscrições já tenha encerrado, você pode solicitar o cancelamento de até 3 (três) atividades de extensão por semestre, via abertura de protocolo. Uma vez tendo obtido o cancelamento em três atividades (cursos e/ou projetos), novas solicitações não serão aceitas e permanecerá o status de reprovado caso você não compareça às aulas.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Qual a diferença entre as horas de Extensão e complementares?</summary>
 						<div>
 							<p>Para que seja reconhecida como atividade de Extensão, os estudantes deverão integrar a equipe que planeja e executa a ação de Extensão, que deve envolver a comunidade externa e cumprir um papel formativo; sendo obrigatória em todos os cursos, correspondendo a 10% da carga horária total.</p>
 							<p>As atividades complementares, por sua vez, ainda que também desempenhem um papel formativo, permitem que o estudante participe na condição de ouvinte e em ações que não envolvam a comunidade externa, por exemplo como aluno em um curso de idiomas ou participante/ouvinte em seminários, Congressos e palestras. É preciso consultar a matriz de cada curso para verificar se há uma carga horária de atividades complementares prevista.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Como faço para que as horas extras sejam contabilizadas?</summary>
 						<div>
 							<p>Para cada ação de Extensão (projeto, curso, prestação de serviço, entre outras) deve ser estabelecida a CH (carga horária) específica. Os professores proponentes dos projetos, por exemplo, indicam qual a CH total que seu plano de trabalho permite integralizar. Projetos podem contabilizar 40h, 60h ou 80h, a depender da proposta. Cursos de Extensão devem ter de 8h a 20h de duração, conforme a proposta de cada curso. Ações pontuais devem prever a CH que será contabilizada como Extensão.</p>
 							<p>As horas de Extensão provenientes das atividades da IES (projetos, cursos, ações pontuais, atividades vinculadas à A3) são lançadas automaticamente no sistema do aluno.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Toda UC requer uma ação de Extensão (desenvolvida na A3, por exemplo)?</summary>
 						<div>
-							<p>Não. A dupla de professores tem autonomia para decidir como será a A3, considerando as metas de compreensão e tópicos geradores a serem desenvolvidos durante o semestre para a Unidade Curricular que ministram.</p>
+							<p>Não. A dupla de professores deve decidir, com autonomia, qual será a sua A3, considerando as metas de compreensão e tópicos geradores a serem desenvolvidos durante o semestre para a Unidade Curricular que ministram.</p>
 							<p>Contudo, caso tal projeto/atividade represente uma ação extensionista, poderá ser contabilizado como horas de extensão, desde que o professor proceda com o cadastro do relatório da atividade desenvolvida e das horas para cada aluno no sistema específico da Extensão. É importante que as horas de Extensão não coincidam com as horas já contabilizadas para as demais atividades da Unidade Curricular, evitando assim que uma mesma atividade seja considerada duas vezes para fins de integralização curricular.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Como faço para retirar meu certificado de participação em curso ou projeto de Extensão?</summary>
 						<div>
 							<p>Os certificados são emitidos de maneira automática em até 45 dias após o término do curso/projeto. Após esse período, o protocolo é gerado automaticamente e você pode baixar seu certificado no caminho: Ulife > Serviços > Solicitações > Emissão de Certificado de Curso/Projeto de Extensão (já aparecerá como protocolo concluído).</p>
 							<p><strong>Não é necessário que você abra protocolo</strong>, pois é gerado automaticamente e sua única ação é fazer o download de seu certificado, uma vez emitido.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Estágio supervisionado conta como atividade de Extensão?</summary>
 						<div>
 							<p>Não. O estágio supervisionado é um componente curricular à parte e segue regulamentação própria de cada curso de graduação, conforme as Diretrizes Curriculares Nacionais do Ministério da Educação.</p>
 						</div>
-					</details>
-					</br>
+					</details></br>
 					<details>
 						<summary>Ações de voluntariado podem ser vistas como atividades de Extensão?</summary>
 						<div>
@@ -325,7 +311,7 @@
 							<div class="zoom-container">
 								<label>
 									<input type="checkbox">
-									<img src="img/comprovante_extensao.png" width="70%" alt="Caminho no Ulife para envio do comprovante de atividade de Extensão">
+									<img src="img/comprovante_extensao.png" alt="Caminho no Ulife para envio do comprovante de atividade de Extensão" width="70%">
 								</label>
 							</div>
 							<span class="zoom-label-click">(Clique para expandir)</span>
@@ -333,7 +319,7 @@
 						</div>
 					</details>
 			</div>
-			<div class="docs-section" id="option_5">
+			<div id="option_5" class="docs-section">
 				<h6 class="docs-header">Suporte</h6>
 					<details>
 						<summary>Quem posso contatar para questões gerais?</summary>
@@ -343,35 +329,35 @@
 					</details>
 			</div>
 		</div>
-		<div id="external">
+		<div id="socials">
 			<div class="grid-container">
 				<div>
 					<a href="https://www.instagram.com/onegociando" aria-label="Instagram">
-					<i class="fa-brands fa-instagram"></i><span aria-hidden="true" class="link-label">Instagram</span></a>
+					<i class="fa-brands fa-instagram"></i><span class="link-label" aria-hidden="true">Instagram</span></a>
 				</div>
 				<div>
 					<a href="https://www.youtube.com/@ProjetoAcolherAnima" aria-label="Youtube">
-					<i class="fa-brands fa-youtube"></i><span aria-hidden="true" class="link-label">YouTube</span></a>
+					<i class="fa-brands fa-youtube"></i><span class="link-label" aria-hidden="true">YouTube</span></a>
+				</div>
+				<div>
+					<a href="" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin"></i><span class="link-label" aria-hidden="true">LinkedIn</span></a>
 				</div>
 				<div>
 					<a href="https://linktr.ee/acolhimento_onegociando" aria-label="Links úteis">
-					<i class="fa-solid fa-link"></i><span aria-hidden="true" class="link-label">Links Úteis</span></a>
-				</div>
-				<div>
-					<a href="https://acolher-negociando.github.io/palestras" aria-label="Palestras">
-					<i class="fa-solid fa-microphone"></i><span aria-hidden="true" class="link-label">Palestras</span></a>
+					<i class="fa-solid fa-link"></i><span class="link-label" aria-hidden="true">Links Úteis</span></a>
 				</div>
 			</div>
 		</div>
 		<footer class="grid-container">
-			<div class="logo" id="acolher"></div>
+			<div id="acolher" class="logo"></div>
 			<div>
 				<p><strong>Importante</strong>: esta página foi criada por estudantes do E2A membros do projeto Acolher, com o intuito de auxiliar os demais estudantes, em especial calouros. <strong>Não somos afiliados ao Grupo Ânima.</strong></p>
 				<p>Se necessário, consulte os canais oficiais. Caso encontre alguma informação desatualizada, pedimos que nos notifique.</p>
 			</div>
-			<div class="logo" id="negociando"></div>
+			<div id="negociando" class="logo"></div>
 		</footer>
 		<script src="js/theme.js"></script>
-		<script src="https://kit.fontawesome.com/655ee7dcb1.js" crossorigin="anonymous" defer></script>
+		<script src="https://kit.fontawesome.com/655ee7dcb1.js" crossorigin="anonymous"></script>
 	</body>
 </html>
